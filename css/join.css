@@ -13,6 +13,7 @@
     --light-gray-color: #d9d9d9;
     --navy-color: #2D3243;
     --kakao-color: #FEE500;
+    --red-color: #FF0000;
     --main-font: 'Pretendard-Regular';
     --normal-weight: 400;
     --bold-weight: 600;
@@ -33,7 +34,7 @@ main {
 
 article {
     width: 86vw;
-    height: auto;
+    height: 10vh;
     box-sizing: border-box;
 }
 
@@ -82,6 +83,8 @@ form button {
     font-size: var(--small-font-size);
     font-family: var(--main-font);
     width: 30%;
+    background-color: #FAFAFB;
+    color: var(--navy-color);
 }
 
 #name-input, #vc-input {
@@ -92,14 +95,38 @@ form button {
     width: calc(70% - 13px - 10px);
 }
 
+.vc-wrap {
+    width: 86vw;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #2D3243;
+}
+
+.vc-timer {
+    position: absolute;
+    top: calc(50px + 10vh + 45px + 13px * 2 + 48px * 2 + 18px);
+    right: calc(7vw + 20px);
+    color: var(--red-color);
+    font-size: small;
+}
+
+.gender-wrap {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
 .gender {
-    width: calc(49% - 13px);
+    width: calc(48% - 8px);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: var(--main-font);
     font-size: var(--small-font-size);
     color: var(--navy-color);
+    cursor: pointer;
 }
 
 .next-btn {
@@ -116,4 +143,16 @@ form button {
     color: var(--white-color);
 }
 
+form input[type=text]:active, form input[type=tel]:active, form .gender:active,
+form input[type=text]:focus, form input[type=tel]:focus, form .gender:active{
+    border-color: var(--primary-color);
+}
+
+form input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:checked + .gender{
+    border-color: var(--primary-color);
+}
 
