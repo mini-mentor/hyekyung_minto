@@ -37,6 +37,7 @@ main {
 
 .img-wrap img {
     object-fit: contain;
+    transform: translateY(16%);
     width: 100%;
     height: 100%;
 }
