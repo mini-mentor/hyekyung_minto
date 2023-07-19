@@ -71,7 +71,6 @@ form input[type=text], form input[type=tel], .gender {
 }
 
 form input[type=text]::placeholder, form input[type=tel]::placeholder {
-    padding: 0 5px;
     font-size: var(--small-font-size);
     font-family: var(--main-font);
 }
@@ -85,6 +84,7 @@ form button {
     width: 30%;
     background-color: #FAFAFB;
     color: var(--navy-color);
+    cursor: pointer;
 }
 
 #name-input, #vc-input {
