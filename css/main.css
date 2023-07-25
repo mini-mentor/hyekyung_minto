@@ -97,15 +97,49 @@ main .apply .img-wrap img {
     height: 100%;
 }
 
+article {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 22px;
+}
+
+article .post {
+    width: 86vw;
+    box-sizing: border-box;
+}
+
+article .post h1 {
+    font-family: var(--main-font);
+    font-size: var(--big-font-size);
+    font-weight: var(--bold-weight);
+    color: var(--black-color);
+}
+
+article .post .content-wrap {
+    width: 86vw;
+    height: 20vh;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+article .post:last-child .content-wrap {
+    margin: 0 0 15vh 0;
+}
+
 nav {
     position: fixed;
+    background-color: var(--white-color);
     width: 100%;
     height: 10vh;
     box-sizing: border-box;
     bottom: 0;
     box-sizing: border-box;
     display: flex;
-    align-content: flex-start   ;
+    align-content: flex-start;
     justify-content: space-evenly;
 }
 
@@ -114,10 +148,10 @@ nav .nav-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 2vh;
 }
 
 nav .nav-item ion-icon {
+    margin: 1.3vh 0;
     color: #c2c2c2;
     min-width: 22px;
     min-height: 22px;
