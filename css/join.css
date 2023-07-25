@@ -131,7 +131,7 @@ form button {
 
 .next-btn {
     position: absolute;
-    bottom: 80px;
+    bottom: 8vh;
     width: 86vw;
     height: 54px;
     outline: none;

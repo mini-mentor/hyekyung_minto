@@ -29,22 +29,20 @@ main {
 }
 
 .img-wrap {
-    width: 90vw;
-    height: 100vw;
-    background-color: var(--primary-color);
+    width: 90vmin;
+    height: 90vmin;
     border-radius: 20px;
 }
 
 .img-wrap img {
     object-fit: contain;
-    transform: translateY(16%);
     width: 100%;
     height: 100%;
 }
 
 article {
     margin: 3vh 0 0 0;
-    width: 90vw;
+    width: 85vw;;
     box-sizing: border-box;
 }
 
@@ -65,7 +63,7 @@ article h2 {
 
 .login-div {
     position: absolute;
-    bottom: 80px;
+    bottom: 8vh;
     width: 85vw;
     height: 8vh;
     background-color: var(--kakao-color);
