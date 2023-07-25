@@ -7,15 +7,19 @@
 
 :root {
     --primary-color: #00D2BD;
+    --white-color: #FFF;
     --black-color: #000;
     --gray-color: #515151;
     --light-gray-color: #d9d9d9;
+    --navy-color: #2D3243;
     --kakao-color: #FEE500;
+    --red-color: #FF0000;
     --main-font: 'Pretendard-Regular';
     --normal-weight: 400;
     --bold-weight: 600;
     --normal-font-size: 1rem;
     --big-font-size: 1.5rem;
+    --small-font-size: 0.8rem;
 }
 
 main {
