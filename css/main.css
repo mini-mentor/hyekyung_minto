@@ -40,7 +40,7 @@ body {
 
 .search input {
     width: 80vw;
-    height: 24px;
+    height: 28px;
     border: none;
     border-radius: 20px;
     outline: none;
@@ -57,8 +57,11 @@ body {
 }
 
 .search ion-icon {
+    width: 20px;
+    height: 20px;
+    --ionicon-stroke-width: 32px;
     position : absolute;
-    width: 17px;
+    width: 5vw;
     top: calc(50px + 22px);
     right: 12vw;
     margin: 0;
