@@ -133,6 +133,13 @@ article .post:last-child .content-wrap {
     margin: 0 0 15vh 0;
 }
 
+article .post .content-wrap img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
 nav {
     position: fixed;
     background-color: var(--white-color);
