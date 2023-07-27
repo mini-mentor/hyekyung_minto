@@ -19,10 +19,43 @@
             <h1>현업 개발자 선배들의<br> 실무 중심 개발 멘토링, 미니멘토</h1>
             <h2>가입하면 멘토링 신청, 결과 확인 등의<br> 여러 기능을 이용할 수 있어요!</h2>
         </article>
-        <div class="login-div">
+        <div class="login-div" onclick="moveKakaoLogin()">
             <img src="img/kakao_login.svg" alt="카카오톡 아이콘">
             <span>카카오로 로그인</span>
         </div>
     </main>
+    <script>
+        const REST_API_KEY = "d2b7a4c136d454a2bc445aa50f1337c0";
+        const kakaoLoginUrl = "https://kauth.kakao.com/oauth/authorize";
+        const kakaoTokenApiUrl = "https://kauth.kakao.com/oauth/token";
+        const redirectUrl = "http://localhost:3000";
+
+        // 1. 카카오 로그인 창으로 이동
+        function moveKakaoLogin() {
+            location.href = `${kakaoLoginUrl}?client_id=${REST_API_KEY}&redirect_uri=${redirectUrl}&response_type=code`;
+        }
+
+        function getKakaoToken(code) {
+            let token = "";
+            let data = {
+                "grant_type": "authorization_code",
+                "client_id": REST_API_KEY,
+                "redirect_uri": redirectUrl,
+                "code": code,
+            };
+
+            $.ajax(kakaoTokenApiUrl, {
+                data: data,
+                dataType: "json",
+                method: "POST",
+                async: false,
+                success: function (resultData) {
+                token = resultData.access_token;
+            }});
+
+                return token;
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 </body>
 </html>
