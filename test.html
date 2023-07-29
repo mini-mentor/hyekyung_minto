@@ -10,50 +10,6 @@
     <script>
 
 
-        // const getDataCallback = (num, callback) => {
-        //     setTimeout(()=>{
-        //         if(typeof num === 'number') 
-        //             callback(undefined, num * 2);
-        //         else 
-        //             callback('숫자가 아닙니다.', num);
-        //     },1000);
-        // };
-
-        // getDataCallback(2, (errMsg, data) => {
-        //     if(errMsg !== undefined){
-        //         console.log(errMsg)
-        //     }
-        //     else{
-        //         getDataCallback(data, (errMsg, data) => {
-        //             if(errMsg !== undefined) {
-        //                 console.log(errMsg);
-        //             }else{
-        //                 getDataCallback(data, (errMsg, data) => {
-        //                     if(errMsg !== undefined) {
-        //                         console.log(errMsg);
-        //                     }else{
-        //                         console.log(data);
-        //                     }
-        //                 });
-        //             }
-        //         });
-        //     }
-        // });
-
-        // const getDataPromise = num => new Promise((resolve, reject) =>{
-        //     setTimeout(() => {
-        //         typeof num === 'number' ? resolve(num * 2) : reject('숫자가 아닙니다.');
-        //     }, 1000);
-        // });
-
-        // getDataPromise(2)
-        //     .then(data => getDataPromise(data))
-        //     .then(data => getDataPromise(data))
-        //     .then(data => console.log(data))    // 16을 출력
-        //     .catch(errMsg => console.log(errMsg));
-
-
-
         // 콘솔에 출력되는 값은?
 
         const getPositivePromise = num => new Promise((resolve, reject) => {
@@ -87,7 +43,6 @@
             // 4
             // -1 is negative!
         
-
     </script>
 </body>
 </html>
