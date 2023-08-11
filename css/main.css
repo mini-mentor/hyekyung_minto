@@ -35,6 +35,10 @@ body {
     align-items: center;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .search {
     margin: 50px 0;
     width: 90vw;
@@ -169,6 +173,10 @@ nav .nav-item ion-icon {
 }
 
 nav .nav-item:active ion-icon {
+    color: var(--primary-color);
+}
+
+nav .nav-item:hover ion-icon {
     color: var(--primary-color);
 }
 
