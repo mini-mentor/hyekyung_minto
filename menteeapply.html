@@ -5,10 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>minto</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menteeapply.css">
 </head>
 <body>
-    
+    <header>
+        <a href="main.html">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+        </a>
+        <h1>멘티로 지원하기</h1>
+    </header>
+    <main>
+        <form action="">
+            <div class="input-container">
+                <span class="label">
+                    이름
+                </span>
+                <input type="text" placeholder="이름을 입력해주세요">
+            </div>
+            <div class="input-container">
+                <!-- TODO: selector 커스텀하기 -->
+                <span class="label">
+                    학년
+                </span>
+                <select name="grade" id="grade-selector">
+                    <option disabled selected>학년을 선택해주세요</option>
+                    <option value="first">1학년</option>
+                    <option value="second">2학년</option>
+                    <option value="third">3학년</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <span class="label">
+                    학교
+                </span>
+                <input type="text" placeholder="학교명을 입력해주세요">
+            </div>
+            <div class="input-container">
+                <span class="label">
+                    지원 동기
+                </span>
+                <textarea name="motive" id="motive-textarea" cols="30" rows="10" placeholder="지원 동기를 작성해주세요"></textarea>
+            </div>
+            <!-- TODO: 링크 삽입 만들기 -->
+            <!-- TODO: 버튼 만들기 -->
+        </form>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

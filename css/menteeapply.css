@@ -1,0 +1,105 @@
+header {
+    width: 100%;
+    padding: 45px 32px;
+    display: flex;
+    column-gap: 20px;
+}
+
+header ion-icon {
+    font-size: 20px;
+}
+
+header h1 {
+    margin: 0 0 0 0;
+    font-size: var(--normal-font-size);
+    font-weight: var(--bold-weight);
+    font-family: var(--main-font);
+    color: var(--black-color);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .input-container {
+    width: 100%;
+    margin: 0 0 3vh 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+}
+
+main .input-container .label {
+    font-size: var(--small-font-size);
+    font-weight: var(--normal-weight);
+    font-family: var(--main-font);
+    color: var(--black-color);
+}
+
+main .input-container input[type=text] {
+    width: 80vw;
+    height: 24px;
+    outline: none;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: var(--light-gray-color);
+    border-style: solid;
+    padding: 10px 12px;
+    font-size: var(--small-font-size);
+    font-family: var(--main-font);
+}
+
+main .input-container input::placeholder {
+    font-size: var(--small-font-size);
+    font-family: var(--main-font);
+    color: var(--gray-color);
+}
+
+main .input-container input[type=text]:focus, main .input-container textarea:focus {
+    border-color: var(--primary-color);
+}
+
+main .input-container #grade-selector {
+    width: 100%;
+    height: 48px;
+    outline: none;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: var(--light-gray-color);
+    border-style: solid;
+    padding: 10px 12px;
+    font-size: var(--small-font-size);
+    font-family: var(--main-font);
+}
+
+main .input-container #grade-selector option{
+    width: 100%;
+    height: 32px;
+    outline: none;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: var(--light-gray-color);
+    border-style: solid;
+    padding: 10px 12px;
+    font-size: var(--small-font-size);
+    font-family: var(--main-font);
+}
+
+main .input-container textarea {
+    width: 80vw;
+    height: 20vh;
+    outline: none;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: var(--light-gray-color);
+    border-style: solid;
+    padding: 10px 12px;
+    font-size: var(--small-font-size);
+    font-family: var(--main-font);
+}
+
