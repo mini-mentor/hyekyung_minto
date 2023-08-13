@@ -43,3 +43,8 @@ a {
 ::-webkit-scrollbar {
     display: none;
 }
+
+li {
+    list-style: none;
+    float: left;
+}
