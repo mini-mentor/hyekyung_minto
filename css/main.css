@@ -93,12 +93,52 @@ main .apply .img-wrap img {
     box-sizing: border-box;
 }
 
+.posts-container .post:last-child {
+    margin-bottom: 12vh;
+}
+
 .posts-container .post .title {
     margin: 0 0 20px 0;
     font-family: var(--main-font);
-    font-size: var(--big-font-size);
+    font-size: var(--normal-font-size);
     font-weight: var(--bold-weight);
     color: var(--black-color);
+}
+
+.seminar-apply-container {
+    width: calc(100% - 40px);
+    height: calc(10vh - 40px);
+    min-height: 120px;
+    border: 1px solid #D4D6DA;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.seminar-apply-container .seminar-main-title {
+    font-size: var(--big-font-size);
+}
+
+.seminar-apply-container .seminar-sub-title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--normal-weight);
+    color: var(--black-gray-color);
+}
+
+.seminar-apply-container .seminar-apply-button {
+    width: 60%;
+    height: 4vh;
+    align-self: flex-end;
+    outline: none;
+    border: none;
+    font-family: var(--main-font);
+    font-size: var(--small-font-size);
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
 }
 
 .mentors-container {
