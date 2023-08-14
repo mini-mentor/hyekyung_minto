@@ -84,3 +84,7 @@ main {
 .content-container {
     margin: 0 0 12vh 0;
 }
+
+.content, .summary {
+    word-break: keep-all;
+}
