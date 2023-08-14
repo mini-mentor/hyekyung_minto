@@ -85,7 +85,7 @@ main .apply .img-wrap img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 32px;
 }
 
 .posts-container .post {
