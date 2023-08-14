@@ -1,8 +1,12 @@
 header {
+    position: fixed;
     width: 100%;
-    padding: 45px 32px;
+    height: 30px;
+    padding: 45px 32px 10px 32px;
     display: flex;
     column-gap: 20px;
+    z-index: 1;
+    background-color: var(--white-color);
 }
 
 header ion-icon {
@@ -18,6 +22,8 @@ header h1 {
 }
 
 main {
+    position: absolute;
+    top: calc(30px + 45px + 10px + 20px);
     width: 100%;
     height: 100%;
     box-sizing: border-box;
