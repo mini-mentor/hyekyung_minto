@@ -1,0 +1,86 @@
+body {
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    padding: 45px 32px 10px 32px;
+    display: flex;
+    column-gap: 20px;
+    z-index: 1;
+    background-color: var(--white-color);
+}
+
+header ion-icon {
+    font-size: 20px;
+}
+
+header h1 {
+    margin: 0 0 0 0;
+    font-size: var(--normal-font-size);
+    font-weight: var(--bold-weight);
+    font-family: var(--main-font);
+    color: var(--black-color);
+}
+
+main {
+    position: absolute;
+    top: calc(30px + 45px + 10px + 20px);
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    width: calc(100% -40px);
+    margin: 0 20px 50px 20px;
+    box-sizing: border-box;
+}
+
+.profile-wrap {
+    width: 50vw;
+    height: 20vh;
+    align-self: center;
+}
+
+.profile-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container .title {
+    font-size: var(--large-font-size);    
+}
+
+.title-container .name {
+    margin: 0 0 10px 0;
+    font-size: var(--big-font-size);
+    font-weight: var(--bold-weight);
+}
+
+.summary-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.summary-container .summary {
+    font-family: 'HakgyoansimGaeulsopungB';
+    font-size: var(--large-font-size);
+    font-weight: 400;
+}
+
+.content-container {
+    margin: 0 0 12vh 0;
+}
