@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minto</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/seminarapply.css">
+</head>
+<body>
+    <header>
+        <a href="main.html">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+        </a>
+        <h1>제1회 미니 세미나 신청하기</h1>
+    </header>
+    <main>
+        <form action="" class="apply-container">
+            <div class="input-container">
+                <span class="label">
+                    이름
+                </span>
+                <input type="text" placeholder="이름을 입력해주세요">
+            </div>
+            <div class="input-container">
+                <span class="label">
+                    학년
+                </span>
+                <select name="grade" id="grade-selector">
+                    <option disabled selected>학년을 선택해주세요</option>
+                    <option value="first">1학년</option>
+                    <option value="second">2학년</option>
+                    <option value="third">3학년</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <span class="label">
+                    세미나를 통해 얻어가고 싶은 것이 있다면 적어주세요!
+                </span>
+                <textarea name="goal" cols="30" rows="10"></textarea>
+            </div>
+            <div class="input-container">
+                <span class="label">
+                    앞으로의 회차에서 듣고 싶은 주제가 있다면 적어주세요!
+                </span>
+                <textarea name="needs" cols="30" rows="10"></textarea>
+            </div>
+            <div class="input-container">
+                <span class="label">
+                    궁금한 것이 있다면 자유롭게 적어주세요!
+                </span>
+                <textarea name="question" cols="30" rows="10"></textarea>
+            </div>
+            <button class="apply-button">
+                <span>신청하기</span>
+            </button>
+        </form>
+    </main>
+    <nav>
+        <ul class="nav-list">
+            <a href="main.html">
+                <li>
+                    <div class="nav-item">
+                    <ion-icon name="home"></ion-icon>
+                    <span>홈</span>
+                    </div>
+                </li>
+            </a>
+            <li>
+                <div class="nav-item">
+                    <ion-icon name="calendar-number"></ion-icon>
+                    <span>일정</span>
+                </div>
+            </li>
+            <li>
+                <div class="nav-item">
+                    <ion-icon name="folder-open"></ion-icon>
+                    <span>히스토리</span>
+                </div>
+            </li>
+            <li>
+                <div class="nav-item">
+                    <ion-icon name="person"></ion-icon>
+                    <span>마이페이지</span>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
