@@ -16,7 +16,7 @@
         <h1>멘티로 지원하기</h1>
     </header>
     <main>
-        <form action="">
+        <form action="" class="apply-container">
             <div class="input-container">
                 <span class="label">
                     이름
@@ -47,8 +47,26 @@
                 </span>
                 <textarea name="motive" id="motive-textarea" cols="30" rows="10" placeholder="지원 동기를 작성해주세요"></textarea>
             </div>
-            <!-- TODO: 링크 삽입 만들기 -->
-            <!-- TODO: 버튼 만들기 -->
+            <div class="input-container links-container">
+                <span class="label">
+                    포트폴리오 링크
+                </span>
+                <div class="link-input-container">
+                    <ion-icon name="link-outline"></ion-icon>
+                    <input type="text" placeholder="포트폴리오 링크 1">
+                </div>
+                <div class="link-input-container">
+                    <ion-icon name="link-outline"></ion-icon>
+                    <input type="text" placeholder="포트폴리오 링크 2">
+                </div>
+                <div class="link-input-container">
+                    <ion-icon name="link-outline"></ion-icon>
+                    <input type="text" placeholder="포트폴리오 링크 3">
+                </div>
+            </div>
+            <button class="apply-button">
+                <span>지원하기</span>
+                </button>
         </form>
     </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
