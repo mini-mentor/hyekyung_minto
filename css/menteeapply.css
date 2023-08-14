@@ -33,7 +33,7 @@ main {
 }
 
 main .apply-container {
-    width: 86vw ;
+    width: 86vw;
     position: relative;
 }
 
@@ -147,6 +147,7 @@ select::-ms-expand{
     margin: 20px 0;
     outline: none;
     border: none;
+    margin-bottom: 13vh;
     border-radius: 10px;
     background-color: var(--primary-color);
     font-family: var(--main-font);
