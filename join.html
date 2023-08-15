@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>join</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/join.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/join.css">
 </head>
 <body>
     <main>
@@ -15,16 +15,18 @@
         </article>
         <form action="">
             <input type="text" placeholder="황혜경" id="name-input">
-            <input type="tel" placeholder="010-0000-0000" id="tel-input">
-            <button>인증 받기</button>
+            <div class="tel-container">
+                <input type="tel" placeholder="010-0000-0000" id="tel-input">
+                <button class="vc-button">인증 받기</button>
+            </div>
             <input type="text" placeholder="123456" id="vc-input">
             <span class="vc-timer">00:00</span>
-            <div class="gender-wrap">
+            <div class="gender-container">
                 <input type="radio" id="select1" name="gender" checked="true"><label for="select1" class="gender">여자</label>
                 <input type="radio" id="select2" name="gender"><label for="select2" class="gender">남자</label>
             </div>
         </form>
-        <button class="next-btn">다음</button>
+        <button class="next-button">다음</button>
     </main>
 </body>
 </html>

@@ -8,7 +8,7 @@ const summarySpan = document.getElementsByClassName('summary')[0];
 const contentSpan = document.getElementsByClassName('content')[0];
 
 let mentorData;
-for(let mentorOne of mentor.mentors){
+for(let mentorOne of data.mentors){
     if(id === mentorOne.id) {
         mentorData = mentorOne;
         break;
